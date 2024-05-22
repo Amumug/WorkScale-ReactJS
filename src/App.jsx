@@ -19,6 +19,12 @@ function App() {
             <Hero />
           </div>
         </div>
+
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxwidth}`}>
+            <Stats />
+          </div>
+        </div>
       </div>
 
     </>

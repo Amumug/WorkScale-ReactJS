@@ -39,11 +39,17 @@ const Navbar = () => {
         </li>
 
         <li
-          className={`text-neutral-500 text-base hover:text-neutral-700 font-semibold font-['Poppins', sans-serif] cursor-pointer`}
+          className={`text-neutral-500 text-base hover:text-neutral-700 mr-7 font-semibold font-['Poppins', sans-serif] cursor-pointer`}
         >
           <a href="#">
             Join Today
           </a>
+        </li>
+
+        <li
+          className={`text-neutral-500 text-base hover:text-neutral-700 font-semibold font-['Poppins', sans-serif] cursor-pointer`}
+        >
+          <img src={moon} />
         </li>
       </ul>
 
