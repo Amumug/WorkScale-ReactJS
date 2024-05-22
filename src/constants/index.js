@@ -15,13 +15,13 @@ export const navLinks = [
     id: "showcases",
     title: "Showcases",
   },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-  {
-    id: "jointoday",
-    title: "Join Today",
-  },
+  // {
+  //   id: "contact",
+  //   title: "Contact",
+  // },
+  // {
+  //   id: "jointoday",
+  //   title: "Join Today",
+  // },
 ];
 
