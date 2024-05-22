@@ -15,7 +15,7 @@ function App() {
         </div>
 
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth}`}>
+          <div className={`${styles.boxwidth}`}>
             <Hero />
           </div>
         </div>

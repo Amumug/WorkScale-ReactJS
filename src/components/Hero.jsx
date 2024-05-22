@@ -1,18 +1,75 @@
 import React from "react";
 import styles from "../style";
+import teamlight from "../assets/team-light.svg"
+import book from "../assets/book.svg"
+import health from "../assets/health.svg"
+import laptop from "../assets/computer.svg"
+import desk from "../assets/desk.svg"
+import duo from "../assets/duo.svg"
+import card from "../assets/card.svg"
 
 
 const Hero = () => {
   return (
-    <section className="flex md:flex-row flex-col ${styles.paddingY}">
-      <div className="flex inline-flex items-end ">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.99999 8.33341C10.884 8.33341 11.7319 7.98222 12.357 7.3571C12.9821 6.73198 13.3333 5.88414 13.3333 5.00008C13.3333 4.11603 12.9821 3.26818 12.357 2.64306C11.7319 2.01794 10.884 1.66675 9.99999 1.66675C9.11593 1.66675 8.26809 2.01794 7.64297 2.64306C7.01785 3.26818 6.66666 4.11603 6.66666 5.00008C6.66666 5.88414 7.01785 6.73198 7.64297 7.3571C8.26809 7.98222 9.11593 8.33341 9.99999 8.33341ZM4.58332 10.8334C5.13586 10.8334 5.66576 10.6139 6.05646 10.2232C6.44716 9.83252 6.66666 9.30261 6.66666 8.75008C6.66666 8.19755 6.44716 7.66764 6.05646 7.27694C5.66576 6.88624 5.13586 6.66675 4.58332 6.66675C4.03079 6.66675 3.50088 6.88624 3.11018 7.27694C2.71948 7.66764 2.49999 8.19755 2.49999 8.75008C2.49999 9.30261 2.71948 9.83252 3.11018 10.2232C3.50088 10.6139 4.03079 10.8334 4.58332 10.8334ZM17.5 8.75008C17.5 9.30261 17.2805 9.83252 16.8898 10.2232C16.4991 10.6139 15.9692 10.8334 15.4167 10.8334C14.8641 10.8334 14.3342 10.6139 13.9435 10.2232C13.5528 9.83252 13.3333 9.30261 13.3333 8.75008C13.3333 8.19755 13.5528 7.66764 13.9435 7.27694C14.3342 6.88624 14.8641 6.66675 15.4167 6.66675C15.9692 6.66675 16.4991 6.88624 16.8898 7.27694C17.2805 7.66764 17.5 8.19755 17.5 8.75008ZM9.99999 9.16675C11.1051 9.16675 12.1649 9.60573 12.9463 10.3871C13.7277 11.1685 14.1667 12.2283 14.1667 13.3334V18.3334H5.83332V13.3334C5.83332 12.2283 6.27231 11.1685 7.05371 10.3871C7.83511 9.60573 8.89492 9.16675 9.99999 9.16675ZM4.16666 13.3334C4.16666 12.7559 4.24999 12.1984 4.40666 11.6717L4.26499 11.6834C3.55072 11.7618 2.89054 12.1012 2.41104 12.6363C1.93154 13.1715 1.66647 13.8649 1.66666 14.5834V18.3334H4.16666V13.3334ZM18.3333 18.3334V14.5834C18.3334 13.8404 18.0499 13.1253 17.5407 12.5842C17.0315 12.0431 16.335 11.7168 15.5933 11.6717C15.7492 12.1984 15.8333 12.7559 15.8333 13.3334V18.3334H18.3333Z" fill="black" />
-        </svg>
+    <section className="flex md:flex-row flex-col ${styles.paddingY} justify-center items-center">
+      <div className="flex inline-flex items-end space-x-2 mt-10">
+        <img src={teamlight} className="mb-0.5" />
         <h4 className="text-gray-800 text-base font-medium font-['Inter', sans-serif]">Team & Careers</h4>
 
 
 
+      </div>
+      <h1 className="text-center text-gray-900 text-[32px] font-medium font-['Inter', sans-serif] mt-5">The team from around the globe</h1>
+      <h4 className="text-center text-gray-700 text-sm font-medium font-['Inter', sans-serif] mt-4">Creators, designer, engineers, entrepreneurs and and story tellers.</h4>
+      <div>
+        <div className="w-[339px] h-[46px] px-7 py-[5px] mt-8 mb-3 bg-gray-900 rounded-lg justify-center items-center gap-2.5 inline-flex">
+          <div className="text-neutral-200 text-lg font-medium font-['Inter', sans-serit]">Open positions</div>
+        </div>
+
+        <div className="w-[339px] h-[46px] px-7 py-[5px]  justify-center items-center gap-2.5 inline-flex">
+          <div className="text-gray-901 text-lg font-medium font-['Inter', sans-serif]">Learn more</div>
+        </div>
+        <div className="flex-col justify-start items-start inline-flex mt-10">
+          <div className="flex-col justify-start items-start gap-3.5 inline-flex ">
+            <img src={book} />
+            <p className="ext-neutral-700 text-[22px] font-semibold font-['Inter', sans-serif]">Build for career growth</p>
+            <p className="text-zinc-500 text-[13px] font-medium font-['Inter', sans-serif] leading-normal">We help you grow in your career with ongoing
+              mentorship, and help you can build your network.</p>
+          </div>
+
+          <div className="flex-col justify-start items-start gap-3.5 mt-12 inline-flex ">
+            <img src={laptop} />
+            <p className="ext-neutral-700 text-[22px] font-semibold font-['Inter', sans-serif]">Work-life balance</p>
+            <p className="text-zinc-500 text-[13px] font-medium font-['Inter', sans-serif] leading-normal">We pffer an open vacation policy with a recommended
+              4-weeks per year. Recharge whenever you need to.</p>
+          </div>
+
+          <div className="flex-col justify-start items-start gap-3.5 mt-12 inline-flex ">
+            <img src={desk} />
+            <p className="ext-neutral-700 text-[22px] font-semibold font-['Inter', sans-serif]">100% remote-friendly</p>
+            <p className="text-zinc-500 text-[13px] font-medium font-['Inter', sans-serif] leading-normal">We are 100% remote-friendly, work with team mates
+              from different time zones across the globe.</p>
+          </div>
+          <div className="flex-col justify-start items-start gap-3.5 mt-12 inline-flex ">
+            <img src={duo} />
+            <p className="ext-neutral-700 text-[22px] font-semibold font-['Inter', sans-serif]">Diversity and inclusion</p>
+            <p className="text-zinc-500 text-[13px] font-medium font-['Inter', sans-serif] leading-normal">We help you grow in your career with ongoing
+              mentorship, and help you can build your network.</p>
+          </div>
+          <div className="flex-col justify-start items-start gap-3.5 mt-12 inline-flex ">
+            <img src={health} />
+            <p className="ext-neutral-700 text-[22px] font-semibold font-['Inter', sans-serif]">Full health care package</p>
+            <p className="text-zinc-500 text-[13px] font-medium font-['Inter', sans-serif] leading-normal">We care about your well-being, and offer dental and
+              vision benefits for you and your family.</p>
+          </div>
+          <div className="flex-col justify-start items-start gap-3.5 mt-12 inline-flex ">
+            <img src={card} />
+            <p className="ext-neutral-700 text-[22px] font-semibold font-['Inter', sans-serif]">Perk stipends program</p>
+            <p className="text-zinc-500 text-[13px] font-medium font-['Inter', sans-serif] leading-normal">We offer several perk stipends to support healthy
+              home office ergonomics and continuous learning.</p>
+          </div>
+
+        </div>
       </div>
     </section>
   )

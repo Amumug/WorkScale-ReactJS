@@ -1,4 +1,4 @@
-import lightLogo from "../assets/WorkScaleLogo.svg"
+import lightLogo from "../assets/WorkScaleLogo-light.svg"
 import moon from "../assets/moon.svg"
 import styles from "../style";
 import { navLinks } from "../constants";
