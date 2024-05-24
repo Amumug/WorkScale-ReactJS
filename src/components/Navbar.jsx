@@ -1,26 +1,36 @@
 import lightLogo from "../assets/WorkScaleLogo-light.svg"
+import darklogo from "../assets/logo-dark.svg"
 import moon from "../assets/moon.svg"
+import sun from "../assets/sun-moon.svg"
 import styles from "../style";
 import { navLinks } from "../constants";
-import { useState } from "react";
+import React, { useState } from "react";
 import menu from "../assets/mingcute_menu-fill.svg"
 import close from "../assets/mingcute_close-fill.svg"
+import { IoMoon, IoSunny } from "react-icons/io5";
+
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
+  const [dark, setDark] = React.useState(false);
+
+    const darkModeHandler = () => {
+        setDark(!dark);
+        document.body.classList.toggle("dark");
+    }
 
 
   return (
+    
 
-
-    < nav className="w-full flex py-6 justify-between items-center navbar" >
-      <img src={lightLogo} />
+    < nav className="w-full flex py-6 justify-between items-center navbar" >  
+      <img src={lightLogo ? lightLogo : darklogo} />
 
       <ul className="list-none sm:flex hidden justify-start ml-10 items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`text-neutral-500 hover:text-neutral-700 text-base font-semibold font-['Poppins', sans-serif] cursor-pointer ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
+            className={`text-neutral-500 dark:text-red-700  hover:text-neutral-700 text-base font-semibold font-['Poppins', sans-serif] cursor-pointer ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
           >
             <a href="#">
               {nav.title}
@@ -49,7 +59,15 @@ const Navbar = () => {
         <li
           className={`text-neutral-500 text-base hover:text-neutral-700 font-semibold font-['Poppins', sans-serif] cursor-pointer`}
         >
-          <img src={moon} />
+          <button onClick={()=> darkModeHandler()} className="mt-2">
+                {
+                    
+                    dark && <IoSunny className="w-[24px] h-[24px]"/>
+                }
+                {
+                    !dark && <IoMoon className="w-[24px] h-[24px]"/>
+                }
+            </button>
         </li>
       </ul>
 

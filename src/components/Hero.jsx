@@ -11,10 +11,10 @@ import worldmaplight from "../assets/World Map-light.png"
 
 const Hero = () => {
   return (
-    <section className="flex flex-row flex-col ${styles.paddingY} justify-center items-center">
+    <section className="flex flex-row flex-col ${styles.paddingY} justify-center items-center ">
       <div className="flex items-end space-x-2 mt-10">
         <img src={teamlight} className="mb-0.5" />
-        <h4 className="text-gray-800 text-base font-medium font-['Inter', sans-serif]">Team & Careers</h4>
+        <h4 className="text-gray-800 text-base font-medium font-['Inter', sans-serif] ">Team & Careers</h4>
       </div>
       <h1 className="text-center text-gray-900 text-[32px] font-medium font-['Inter', sans-serif] mt-5">The team from around the globe</h1>
       <h4 className="text-center text-gray-700 text-sm font-medium font-['Inter', sans-serif] mt-4">Creators, designer, engineers, entrepreneurs and and story tellers.</h4>
