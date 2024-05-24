@@ -1,5 +1,5 @@
 import lightLogo from "../assets/WorkScaleLogo-light.svg"
-import darklogo from "../assets/logo-dark.svg"
+import darkLogo from "../assets/dark-logo.svg"
 import moon from "../assets/moon.svg"
 import sun from "../assets/sun-moon.svg"
 import styles from "../style";
@@ -24,13 +24,13 @@ const Navbar = () => {
     
 
     < nav className="w-full flex py-6 justify-between items-center navbar" >  
-      <img src={lightLogo ? lightLogo : darklogo} />
+      <img src={dark ? darkLogo : lightLogo} />
 
       <ul className="list-none sm:flex hidden justify-start ml-10 items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`text-neutral-500 dark:text-red-700  hover:text-neutral-700 text-base font-semibold font-['Poppins', sans-serif] cursor-pointer ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
+            className={`text-neutral-500 dark:text-stone-400  hover:text-neutral-700 text-base font-semibold font-['Poppins', sans-serif] cursor-pointer ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
           >
             <a href="#">
               {nav.title}
@@ -41,7 +41,7 @@ const Navbar = () => {
 
       <ul className="list-none sm:flex hidden justify-end ml-10 items-center flex-1">
         <li
-          className={`text-neutral-500 hover:text-neutral-700 text-base font-semibold font-['Poppins', sans-serif] cursor-pointer mr-10`}
+          className={`text-neutral-500 dark:text-stone-400 hover:text-neutral-700 text-base font-semibold font-['Poppins', sans-serif] cursor-pointer mr-10`}
         >
           <a href="#">
             Contact
@@ -49,7 +49,7 @@ const Navbar = () => {
         </li>
 
         <li
-          className={`text-neutral-500 text-base hover:text-neutral-700 mr-7 font-semibold font-['Poppins', sans-serif] cursor-pointer`}
+          className={`text-neutral-500 dark:text-stone-400 text-base hover:text-neutral-700 mr-7 font-semibold font-['Poppins', sans-serif] cursor-pointer`}
         >
           <a href="#">
             Join Today

@@ -2,11 +2,12 @@ import Navbar from "./components/Navbar.jsx"
 import styles from "./style.js"
 import Hero from "./components/Hero.jsx"
 
+
 function App() {
 
   return (
     <>
-      <div className=" w-full overflow-hidden">
+      <div className=" w-full overflow-hidden dark:bg-gray-950">
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />
