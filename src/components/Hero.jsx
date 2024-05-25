@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <section className="flex flex-row flex-col ${styles.paddingY} justify-center items-center ">
       <div className="flex items-end space-x-2 mt-10">
-        <img src={dark ? teamdark : teamlight} className="mb-0.5" />
+        <img src={ teamdark } className="mb-0.5" />
         <h4 className="text-gray-800 text-base dark:text-neutral-300  font-medium font-['Inter', sans-serif] ">Team & Careers</h4>
       </div>
       <h1 className="text-center text-gray-900 dark:text-zinc-200 text-[32px] font-medium font-['Inter', sans-serif] mt-5">The team from around the globe</h1>
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="text-gray-901 text-lg dark:text-gray-200 font-medium font-['Inter', sans-serif]">Learn more</div>
           </div>
         </div>
-        <img src={dark ? worldmapdark : worldmaplight} className="w-full hidden md:block my-12" />
+        <img src={ worldmapdark } className="w-full hidden md:block my-12" />
 
 
         <div className="mt-10 grid grid-cols-1 mb-8  md:grid-cols-3 gap-8">
