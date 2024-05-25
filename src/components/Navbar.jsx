@@ -62,7 +62,7 @@ const Navbar = () => {
           <button onClick={()=> darkModeHandler()} className="mt-2">
                 {
                     
-                    dark && <IoSunny className="w-[24px] h-[24px]"/>
+                    dark && <IoSunny className="w-[24px] h-[24px] dark:text-stone-400 dark:hover:text-neutral-300"/>
                 }
                 {
                     !dark && <IoMoon className="w-[24px] h-[24px]"/>
