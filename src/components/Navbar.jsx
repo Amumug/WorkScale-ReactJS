@@ -14,16 +14,16 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   const [dark, setDark] = React.useState(false);
 
-    const darkModeHandler = () => {
-        setDark(!dark);
-        document.body.classList.toggle("dark");
-    }
+  const darkModeHandler = () => {
+    setDark(!dark);
+    document.body.classList.toggle("dark");
+  }
 
 
   return (
-    
 
-    < nav className="w-full flex py-6 justify-between items-center navbar" >  
+
+    < nav className="w-full flex py-6 justify-between items-center navbar" >
       <img src={dark ? darkLogo : lightLogo} />
 
       <ul className="list-none sm:flex hidden justify-start ml-10 items-center flex-1">
@@ -59,15 +59,15 @@ const Navbar = () => {
         <li
           className={`text-neutral-500 text-base hover:text-neutral-700 font-semibold font-['Poppins', sans-serif] cursor-pointer`}
         >
-          <button onClick={()=> darkModeHandler()} className="mt-2">
-                {
-                    
-                    dark && <IoSunny className="w-[24px] h-[24px] dark:text-stone-400 dark:hover:text-neutral-300"/>
-                }
-                {
-                    !dark && <IoMoon className="w-[24px] h-[24px]"/>
-                }
-            </button>
+          <button onClick={() => darkModeHandler()} className="mt-2">
+            {
+
+              dark && <IoSunny className="w-[24px] h-[24px] dark:text-stone-400 dark:hover:text-neutral-300" />
+            }
+            {
+              !dark && <IoMoon className="w-[24px] h-[24px]" />
+            }
+          </button>
         </li>
       </ul>
 
